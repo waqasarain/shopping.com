@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="products.css">
+  </head>
+  <body>
+<div class="card">
+  <div class="top-section">
+    <img id="image-container" src="Images/p-5-1.jpg" alt="product-1" style="width: 100px; height:110px; margin-left:80px;">
+    <div class="nav">
+      <img onclick="change_img(this)" src="Images/p-5-1.jpg" alt="" style="height:70px; width: 50px">
+      <img onclick="change_img(this)" src="Images/p-5-2.jpg" alt="" style="height:70px; width: 50px">
+      <img onclick="change_img(this)" src="Images/p-5-3.jpg" alt="" style="height:70px; width: 50px">
+    </div>
+    <div class="price">$499<span style="top: 5px;right:10px;color:#9d9d9d;font-size: 14px;"><br>75% Off</span></div>
+
+  </div>
+  
+  <div class="product-info">
+    <div class="name">Women Gown Black, Blue ,White Dress</div>
+    <div class="dis">13 ratings and 0 <br>reviews
+          <span class="fas fa-star-half-alt checked"></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star "></span>
+          <span class="fa fa-star"></span>
+        </div>
+    <a class="btn" href="#">Add to Cart</a>
+  </div>
+
+</div>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="text/javascript">
+    var container = document.getElementById("image-container");
+    function change_img(image) {
+      container.src = image.src;
+    }
+  </script>
+
+  </body>
+</html>

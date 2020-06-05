@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="products.css">
+  </head>
+  <body>
+<div class="card">
+  <div class="top-section">
+    <img id="image-container" src="Images/p-7-1.jpg" alt="product-1" style="width: 120px; height:100px; margin-left:80px; margin-top: 40px;">
+    <div class="nav">
+      <img onclick="change_img(this)" src="Images/p-7-1.jpg" alt="" style="height:60px; width: 70px">
+      <img onclick="change_img(this)" src="Images/p-7-2.jpg" alt="" style="height:60px; width: 70px">
+      <img onclick="change_img(this)" src="Images/p-7-3.jpg" alt="" style="height:60px; width: 70px">
+    </div>
+    <div class="price">$398<span style="top: 5px;right:10px;color:#9d9d9d;font-size: 14px;"><br>60% Off</span></div>
+
+  </div>
+  
+  <div class="product-info">
+    <div class="name" style="font-size: 18px;">Combo pack of 2 Casuals Shoes For Men (1562-1564) Sneakers For Men  (Multicolor)</div>
+    <div class="dis">1,440 ratings and 1,430 <br>reviews
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+    <a class="btn" href="#">Add to Cart</a>
+  </div>
+
+</div>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="text/javascript">
+    var container = document.getElementById("image-container");
+    function change_img(image) {
+      container.src = image.src;
+    }
+  </script>
+
+  </body>
+</html>

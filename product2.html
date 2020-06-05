@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="products.css">
+  </head>
+  <body>
+<div class="card">
+  <div class="top-section">
+    <img id="image-container" src="Images/p-2-1.jpg" alt="product-1" style="width: 90px; height:110px; margin-left:80px;">
+    <div class="nav">
+      <img onclick="change_img(this)" src="Images/p-2-1.jpg" alt="" style="height:50px; width: 40px">
+      <img onclick="change_img(this)" src="Images/p-2-2.jpeg" alt="" style="height:50px; width: 40px">
+      <img onclick="change_img(this)" src="Images/p-2-3.jpg" alt="" style="height:50px; width: 40px">
+    </div>
+    <div class="price">$599<span style="top: 5px;right:10px;color:#9d9d9d;font-size: 14px;"><br>40% Off</span></div>
+
+  </div>
+  
+  <div class="product-info">
+    <div class="name">Women Solid Casual Shirt</div>
+    <div class="dis">33 ratings and 6 <br>reviews
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+    <a class="btn" href="#">Add to Cart</a>
+  </div>
+
+</div>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="text/javascript">
+    var container = document.getElementById("image-container");
+    function change_img(image) {
+      container.src = image.src;
+    }
+  </script>
+
+  </body>
+</html>
